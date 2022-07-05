@@ -17,13 +17,26 @@ const estiloNumeros = {
     width: "50px",
 }
 
+const estiloIcono = {
+    borderRadius: "7%", 
+    backgroundColor: "#262626", 
+    padding: "15px",
+    fontSize: "35px",
+    color: "white",
+    width: "70px",
+    height: "66px",
+    margin: "8px",
+    display: "flex", 
+    justifyContent:"space-between",
+    alignItems: "center"
+}
 
 const Home = (props) => {
 	return (
         <div className="container-fluid">
             <div className="row">
                 <div className="col-12 d-flex justify-content-center">
-                    <h1 className="icono" style={estiloNumeros}><i class="fa-solid fa-clock"></i></h1>
+                    <h1 className="icono justify-content-center" style={estiloIcono}><i className="far fa-clock"></i></h1>
                     <h1 className="milCentenas m-2" style={estiloNumeros}>{props.milCentenas}</h1>
                     <h1 className="milDecenas m-2" style={estiloNumeros}>{props.milDecenas}</h1>
                     <h1 className="milUnidades m-2" style={estiloNumeros}>{props.milUnidades}</h1>
